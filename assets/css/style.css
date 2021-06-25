@@ -1,0 +1,74 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+      font-size: inherit;
+  }
+
+  #nav-link-font {
+      font-size: larger;
+  }
+
+  .nav-item {
+      font-size:larger;
+  }
+
+  .section-heading1 {
+      vertical-align: top;
+      /*text-align: top;*/
+      margin-top: 10px;
+  }
+
+  /*
+  .card .card-image img {
+    height: 100%;
+  }
+  */
+
+  img {
+      height: 100%;
+  }
+
+  .border-blk {
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+  
+  /* These borders used to make boxes on web page visible */
+  .border-red {
+      border: 2px solid red;
+      border-radius: 2px;
+    }
+  
+  .border-blue {
+    border: 2px solid blue;
+    border-radius: 2px;
+  }
+  
+  .border-lightgray {
+    border: 2px solid lightgray;
+    border-radius: 2px;
+  }
+  
+  .border-grn {
+    border: 2px solid lightgreen;
+    border-radius: 2px;
+  }
+  
+  .border-darkgrn {
+    border: 2px solid darkgreen;
+    border-radius: 2px;
+  }
+
+  .dl-button {
+    font-family: "Open Sans";
+  }
+

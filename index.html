@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of William Pate</title>
+    <!--Import Google Icon Font-->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400' rel='stylesheet' type='text/css'> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="./assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <nav class="teal lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo white-text">Portfolio of William Pate</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home" class="nav-item white-text">home</a></li>
+          <li><a href="#projects" class="nav-item white-text">projects</a></li>
+        </ul>
+  
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#about" class="nav-item white-text">home</a></li>
+          <li><a href="#projects" class="nav-item white-text">projects</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+
+    <section id="about">
+      <div class="container">
+        <div class="row valign-wrapper">
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <h3>William Pate</h3>
+              <h5>Aspiring Full Stack Developer</h5>
+              <br>
+              <i class="fab fa-linkedin fa-3x"></i>
+              <a href="https://linkedin.com/in/bill-pate">linkedin.com/in/bill-pate</a>
+              <br>
+              <br>
+
+              <i class="far fa-envelope fa-3x"></i>
+              <a href="mailto:bill.pate%40minprocess%2ecom?subject=">bill.pate@minprocess.com</a>
+              <br>
+              <br>
+              <a class="fa fa-file-pdf-o fa-2x" href="./assets/ResumeWTPate2021.pdf" download="test.pdf">PDF</a>
+              <!-- <button class="btn"><i class="fas fa-download" href="./assets/ResumeWTPate2021.pdf" download="test.pdf"></i> PDF</button> -->
+              <span>My resume</span>
+            </div>
+          </div>
+          <div class="col s12 m8">
+            <h3>About me</h3>
+            <p>
+                I spent 35+ years in industry programming Windows programs for simulation, estimation and optimization of mineral processing operations.
+            </p>
+            <p>
+                I have a Ph.D. in Metallurgical Engineering and upon obtaining that I spent 10 years programming real-time estimation programs for mineral processing as well programming estimation algorthims for estimation of model parameters from lab and plant testwork. I programmed them first in Fortran and then in C++. Then I spent another 15 years programming dynamic simulators for mineral processing plants. They could be used for sizing equipment given the failure rates of equipment and the time to repair them.
+            </p>
+            <p>
+                Now I have learned a different type of programming, that of full stack flex developer and will be looking to find freelance work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+
+    <!-- Projects linked with cards -->
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l12 center-align">
+              <h3>Projects</h3>
+          </div>
+        </div>
+          <div class="row" id="proj-list">
+            <!-- Cards with projects go here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- <script src="./assets/js/materialize.min.js"></script> -->
+  <script src="./assets/js/script.js"></script>
+                
+</body>
+</html>
