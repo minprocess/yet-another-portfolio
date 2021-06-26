@@ -1,4 +1,128 @@
 
+var projObj = [
+  {
+    projTitle: "Wobal - a social media site",
+    gitHubPages: "",
+    gitHubRepo:  "https://github.com/minprocess/Wobal",
+    herokuApp: "https://wobal-2542.herokuapp.com/",
+    imageName:  "",
+    desc: "A social media site that rhymes with global",
+    tech: "Node, bcrypt, connect-session-sequelize, dotenv, eslint, express, express-handlebars, express-session, mysql2, nodemon, sequelize, “badwords” (npm package)"
+  },
+  {
+    projTitle: "Tech Blog",
+    gitHubPages: "",
+    gitHubRepo:  "https://github.com/minprocess/14-Tech-Blog",
+    herokuApp: "https://tech-blog-2542.herokuapp.com/",
+    imageName:  "",
+    desc: "A full stack website hosting a blog (Tech Talk) allowing users to post articles and to post comments about articles",
+    tech: "Node, bcrypt, connect-session-sequelize, dotenv, eslint, express, express-handlebars, express-session, mysql2, sequelize"
+  },
+  {
+    projTitle: "E-commerce-backend",
+    gitHubPages: "",
+    gitHubRepo: "https://github.com/minprocess/13-E-Commerce-Backend",
+    herokuApp: "https://ecomm-backend-2542.herokuapp.com/",
+    imageName: "",
+    desc: "Backend for an e-commerce website",
+    tech: "Noed, Javascript, dotenv, express, mysql2, sequelize"
+  },
+  {
+    projTitle: "Employee Tracker",
+    gitHubPages: "",
+    gitHubRepo: "https://github.com/minprocess/12-Employee-Tracker",
+    herokuApp: "",
+    imageName:  "12-Main_menu_of_Employee_Tracker.png",
+    desc: "A command-line application that allows the user to interact with a mySQL database containing three tables of employee information.",
+    tech: "Node, JavaScript, console.table, inquirer, mysql"
+  },
+  {
+    projTitle: "Note Taker",
+    gitHubPages: "",
+    gitHubRepo: "https://github.com/minprocess/11-Note-Taker",
+    herokuApp: "https://note-taker-wtp.herokuapp.com/",
+    imageName: "11-screen-capture-note-taker.png",
+    desc: "Web site to write and save notes. All notes are saved in the same tables",
+    tech: "HTML, CSS, Node, Javascript, Express, uuid"
+  },
+  {
+    projTitle: "Team profile generator",
+    gitHubPages: "",
+    gitHubRepo: "https://github.com/minprocess/10-Team-Profile-Generator",
+    herokuApp: "",
+    imageName:  "10-screencapture-team.html.png",
+    desc: "This app is a Node.js command-line application that a user questions about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.",
+    tech: "HTML, CSS, Node, Javascript, Inquirer"
+  },
+  {
+    projTitle: "Readme Autogen",
+    gitHubPages: "https://minprocess.github.io/09-Readme-Autogen/",
+    gitHubRepo:  "https://github.com/minprocess/09-Readme-Autogen",
+    herokuApp: "",
+    imageName:  "09-readme-autogen.png",
+    desc: "A JavaScript app uses Inquirer.js to ask a programmer a series of questions and based on that generate a readme file.",
+    tech: "Javascript, Inquirer.js"
+  }
+  {
+    projTitle: "Open Road Travel Agency",
+    gitHubPages: "https://minprocess.github.io/Open-Road-Travel-Agency",
+    gitHubRepo:  "https://github.com/minprocess/Open-Road-Travel-Agency",
+    herokuApp: "",
+    imageName:  "Open-Road-Travel-Agency",
+    desc: "Open Road Travel Agency website with a little bit of Covid-19 info. MVP obviously!",
+    tech: "HTML, CSS, Javascript, 3 APIs "
+  },
+  {
+    projTitle: "Simple Weather",
+    gitHubPages: "https://minprocess.github.io/06-Simple-Weather",
+    gitHubRepo:  "https://github.com/minprocess/06-Simple-Weather",
+    herokuApp: "",
+    imageName:  "06-Simple-Weather",
+    desc: "Weather app with current temperature and 5 day forecast. Uses OpenWeatherMap API",
+    tech: "HTML, CSS, Javascript, jQuery, Moment.js, 1 API"
+  },
+  {
+    projTitle: "Planner",
+    gitHubPages: "https://minprocess.github.io/05-Calendar",
+    gitHubRepo:  "https://github.com/minprocess/05-Calendar",
+    herokuApp: "",
+    imageName:  "05-Calendar",
+    desc: "Simple daily planner. 'Events' entered by the user are kept in local storage until the next day",
+    tech: "HTML, CSS, JavaScript, jQuery, Moment.js"
+  },
+  {
+    projTitle: "Quiz",
+    gitHubPages: "https://minprocess.github.io/04-Quiz",
+    gitHubRepo:  "https://github.com/minprocess/04-Quiz",
+    herokuApp: "",
+    imageName:  "04-Quiz",
+    desc: "Quiz about JavaScript. Has a timer. Score is calculated from the time left on timer.",
+    tech: "HTML, CSS, JavaScript"
+  },
+  {
+    projTitle: "Password Generator",
+    gitHubPages: "https://minprocess.github.io/03-SecPassGen",
+    gitHubRepo:  "https://github.com/minprocess/03-SecPassGen",
+    herokuApp: "",
+    imageName:  "03-SecPassGen",
+    desc: "Generate a password containing random characters. Can be customized.",
+    tech: "HTML, CSS, JavaScript"
+  },
+
+  {
+    projTitle: "Horiseon Refector",
+    gitHubPages: "https://minprocess.github.io/01-Horiseon-Refactor",
+    gitHubRepo:  "https://github.com/minprocess/01-Horiseon-Refactor",
+    herokuApp: "",
+    imageName: "01-Horiseon-Refactor.jpg",
+    desc: "Refactor a website for social media and SEO company.",
+    tech: "HTML, CSS"
+  },
+
+
+]
+
+
 var projNames = [
     "Horiseon Refactor",
     "Password Generator",
@@ -57,12 +181,13 @@ document.addEventListener('DOMContentLoaded', function() {
     projList.innerHTML = html;
   });
 
+  // https://www.w3schools.com/csS/css3_object-fit.asp
 cardHtml = function (i) {
     var html;
     html = `<div class="col s12 l4">
     <div class="card">
       <div class="card-image">
-        <a href="${pageNames[i]}"> <img src="./assets/images/${imgNames[i]}.png"></a>
+        <a href="${pageNames[i]}"> <img src="./assets/images/${imgNames[i]}.png" object-fit w3shool></a>
       </div>
       <div class="card-content">
         <span class="card-title">${projNames[i]}</span>
