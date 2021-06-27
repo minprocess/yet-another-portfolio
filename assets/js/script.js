@@ -5,7 +5,7 @@ var projObj = [
     gitHubPages: "",
     gitHubRepo:  "https://github.com/minprocess/Wobal",
     herokuApp: "https://wobal-2542.herokuapp.com/",
-    imageName:  "",
+    imageName:  "wobal-feed.png",
     desc: "A social media site that rhymes with global",
     tech: "Node, bcrypt, connect-session-sequelize, dotenv, eslint, express, express-handlebars, express-session, mysql2, nodemon, sequelize, “badwords” (npm package)"
   },
@@ -62,7 +62,7 @@ var projObj = [
     imageName:  "09-readme-autogen.png",
     desc: "A JavaScript app uses Inquirer.js to ask a programmer a series of questions and based on that generate a readme file.",
     tech: "Javascript, Inquirer.js"
-  }
+  },
   {
     projTitle: "Open Road Travel Agency",
     gitHubPages: "https://minprocess.github.io/Open-Road-Travel-Agency",
@@ -181,8 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
     projList.innerHTML = html;
   });
 
-  // https://www.w3schools.com/csS/css3_object-fit.asp
-cardHtml = function (i) {
+  cardHtml2 = function (i) {
     var html;
     html = `<div class="col s12 l4">
     <div class="card">
@@ -196,6 +195,50 @@ cardHtml = function (i) {
       <div class="card-action">
         <a href="${repoNames[i]}">Code</a>
         <a href="${pageNames[i]}">Page</a>
+      </div>
+    </div>
+  </div>
+</div>
+`
+    return html;
+
+  }
+
+  // https://www.w3schools.com/csS/css3_object-fit.asp
+cardHtml = function (i) {
+    var html;
+    let pageName = "";
+    if (projObj[i].gitHubPages != "") {
+      pageName = projObj[i].gitHubPages
+    }
+    else if (projObj[i].herokuApp != "") {
+      pageName = projObj[i].herokuApp;
+    }
+
+    let imgName = "lake.png"
+    if (projObj[i].imageName != "") {
+      imgName = projObj[i].imageName;
+    }
+    console.log("img name", imgName)
+
+    let title = projObj[i].projTitle;
+
+    let desc = projObj[i].desc;
+
+    let githubRepo = projObj[i].gitHubRepo;
+
+    html = `<div class="col s12 l4">
+    <div class="card">
+      <div class="card-image">
+        <a href="${pageName}"> <img src="./assets/images/${imgName}" object-fit w3shool></a>
+      </div>
+      <div class="card-content">
+        <span class="card-title">${title}</span>
+        <p>${desc}</p>
+      </div>
+      <div class="card-action">
+        <a href="${githubRepo}">Code</a>
+        <a href="${pageName}">Page</a>
       </div>
     </div>
   </div>
