@@ -1,5 +1,4 @@
-# yet-another-portfolio
-
+# Yet Another Portfolio
 
 ## Description
 Portfolio of the web pages I programmed myself or as part of a team. I used MaterializeCSS for this page. It is supposed to be mobile responsive but there is some fixup needed.
@@ -8,12 +7,12 @@ Portfolio of the web pages I programmed myself or as part of a team. I used Mate
 This web page has a single html file, a single css file and a single js file. MaterialCSS and jQuery are linked with the CDN website, <cdnjs> (https://cdnjs.com). No APIs are used.
 <br>
 <br>
-Code: https://minprocess.github.io/08-Portfolio/
+GitHub pages: https://minprocess.github.io/yet-another-portfolio/
 <br>
-Page: https://github.com/minprocess/08-Portfolio
+GitHub repo: https://github.com/minprocess/08-Portfolio
 
 ## Usage
-![Screen capture of my portfolio page](./assets/images/08-Portfolio-screenshot.png)
+![Screen capture of my portfolio page](./assets/images/yet-another-portfolio-screenshot.png)
 <br>
 
 ## Credits
