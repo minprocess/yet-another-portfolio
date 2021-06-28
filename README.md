@@ -9,7 +9,7 @@ This web page has a single html file, a single css file and a single js file. Ma
 <br>
 GitHub pages: https://minprocess.github.io/yet-another-portfolio/
 <br>
-GitHub repo: https://github.com/minprocess/08-Portfolio
+GitHub repo: https://github.com/minprocess/yet-another-portfolio
 
 ## Usage
 ![Screen capture of my portfolio page](./assets/images/yet-another-portfolio-screenshot.png)
