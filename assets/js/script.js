@@ -1,13 +1,34 @@
 // Array of js objects with properties of my web projects so far (Jun 27 2021)
 var projObj = [
   {
+    projTitle: "Workout Tracker",
+    gitHubPages: "",
+    gitHubRepo: "https://github.com/minprocess/18-Workout-Tracker",
+    herokuApp: "https://workout-tracker-2542.herokuapp.com/",
+    imageName: "18-Snapshot-homepage-workout-tracker.png",
+    desc: "Workout Tracker is a web app to view create and track daily workouts. Project for UPenn Coding Bootcamp",
+    tech: "Node, Express, Mongoose and JavaScript for the backend. HTML, CSS and Javascript for the frontend.",
+    myRole: "contributer"
+  },
+  {
+    projTitle: "Using a regex for validating a password string",
+    gitHubPages: "",
+    gitHubRepo: "https://gist.github.com/minprocess/16c6bdaed839229df6c8d7125fb6277c",
+    herokuApp: "",
+    imageName: "17-screenshot-using-a-regex-validating.png",
+    desc: "A Gist explaining a regular expression that can be used to validate a password. Homework for UPenn Coding Bootcamp",
+    tech: "Gist on GitHub, Markdown",
+    myRole: "sole author"
+  },
+  {
     projTitle: "Wobal - a social media site",
     gitHubPages: "",
     gitHubRepo: "https://github.com/minprocess/Wobal",
     herokuApp: "https://wobal-2542.herokuapp.com/",
     imageName: "wobal-feed.png",
-    desc: "A social media site that rhymes with global",
-    tech: "Node, bcrypt, connect-session-sequelize, dotenv, eslint, express, express-handlebars, express-session, mysql2, nodemon, sequelize, “badwords” (npm package)"
+    desc: "A full stack social media web site that rhymes with global. Simple, easy to use and won't sell data about you. Team project for UPeen Coding Bootcamp",
+    tech: "Node, bcrypt, connect-session-sequelize, dotenv, eslint, express, express-handlebars, express-session, mysql2, nodemon, sequelize, “badwords” (a npm package)",
+    myRole: "contributer"
   },
   {
     projTitle: "Tech Blog",
@@ -15,8 +36,9 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/14-Tech-Blog",
     herokuApp: "https://tech-blog-2542.herokuapp.com/",
     imageName: "14-homepage-tech-blog.png",
-    desc: "A full stack website hosting a blog (Tech Talk) allowing users to post articles and to post comments about articles",
-    tech: "Node, bcrypt, connect-session-sequelize, dotenv, eslint, express, express-handlebars, express-session, mysql2, sequelize"
+    desc: "A full stack website hosting a blog (The Tech Blog) allowing users to post articles and to post comments about articles. Homework for UPenn Coding Bootcamp",
+    tech: "Node, bcrypt, connect-session-sequelize, dotenv, eslint, express, express-handlebars, express-session, mysql2, sequelize",
+    myRole: "sole programmer"
   },
   {
     projTitle: "E-commerce-backend",
@@ -24,8 +46,9 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/13-E-Commerce-Backend",
     herokuApp: "https://ecomm-backend-2542.herokuapp.com/",
     imageName: "13-Insomnia_requests_for_backend_on_Heroku.png",
-    desc: "Backend for an e-commerce website",
-    tech: "Noed, Javascript, dotenv, express, mysql2, sequelize"
+    desc: "Backend for an e-commerce website. Insomnia is used to test the CRUD actions, Homework for UPenn Coding Bootcamp",
+    tech: "Node, Javascript, dotenv, express, mysql2, sequelize",
+    myRole: "sole programmer"
   },
   {
     projTitle: "Employee Tracker",
@@ -33,8 +56,9 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/12-Employee-Tracker",
     herokuApp: "",
     imageName: "12-Main_menu_of_Employee_Tracker.png",
-    desc: "A command-line application that allows the user to interact with a mySQL database containing three tables of employee information.",
-    tech: "Node, JavaScript, console.table, inquirer, mysql"
+    desc: "A command-line application that allows the user to interact with a mySQL database containing three tables of employee information. Homework for UPenn Coding Bootcamp",
+    tech: "Node, JavaScript, console.table, inquirer, mysql",
+    myRole: "contributer"
   },
   {
     projTitle: "Note Taker",
@@ -42,8 +66,9 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/11-Note-Taker",
     herokuApp: "https://note-taker-wtp.herokuapp.com/",
     imageName: "11-screen-capture-note-taker.png",
-    desc: "Web site to write and save notes. All notes are saved in the same tables",
-    tech: "HTML, CSS, Node, Javascript, Express, uuid"
+    desc: "Web site to write and save notes. All notes are saved in one database. Homework for UPenn Coding Bootcamp",
+    tech: "HTML, CSS, Node, Javascript, Express, uuid",
+    myRole: "contributer"
   },
   {
     projTitle: "Team profile generator",
@@ -51,8 +76,9 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/10-Team-Profile-Generator",
     herokuApp: "",
     imageName: "10-Team-profile-screen-capture.png",
-    desc: "This app is a Node.js command-line application that a user questions about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.",
-    tech: "HTML, CSS, Node, Javascript, Inquirer"
+    desc: "This app is a Node.js command-line application that a user questions about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Homework for UPenn Coding Bootcamp",
+    tech: "HTML, CSS, Node, Javascript, Inquirer",
+    myRole: "Sole programmer"
   },
   {
     projTitle: "Readme Autogen",
@@ -60,8 +86,9 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/09-Readme-Autogen",
     herokuApp: "",
     imageName: "09-readme-autogen.png",
-    desc: "A JavaScript app uses Inquirer.js to ask a programmer a series of questions and based on that generate a readme file.",
-    tech: "Javascript, Inquirer.js"
+    desc: "A JavaScript app uses Inquirer.js to ask a programmer a series of questions and based on that generate a readme file. Homework for UPenn Coding Bootcamp",
+    tech: "Javascript, Inquirer.js",
+    myRole: "Sole programmer"
   },
   {
     projTitle: "Open Road Travel Agency",
@@ -69,8 +96,9 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/Open-Road-Travel-Agency",
     herokuApp: "",
     imageName: "Open-Road-Travel-Agency.png",
-    desc: "Open Road Travel Agency website with a little bit of Covid-19 info. MVP obviously!",
-    tech: "HTML, CSS, Javascript, 3 APIs "
+    desc: "Open Road Travel Agency website with a little bit of Covid-19 info. MVP. Team project for UPenn Coding Bootcampe",
+    tech: "HTML, CSS, Javascript, 3 APIs ",
+    myRole: "Contributer"
   },
   {
     projTitle: "Simple Weather",
@@ -147,11 +175,9 @@ cardHtml = function (i) {
     if (projObj[i].imageName != "") {
       imgName = projObj[i].imageName;
     }
-
     let title = projObj[i].projTitle;
-
     let desc = projObj[i].desc;
-
+    let tech = projObj[i].tech;
     let githubRepo = projObj[i].gitHubRepo;
 
     html = `<div class="col s12 l4">
@@ -159,9 +185,13 @@ cardHtml = function (i) {
       <div class="card-image">
         <a href="${pageName}"> <img src="./assets/images/${imgName}" object-fit w3shool></a>
       </div>
-      <div class="card-content">
+      <div class="card-content style="min-height: 500px;">
+      <div style="min-height: 300px">
         <span class="card-title">${title}</span>
         <p>${desc}</p>
+        <p>···</p>
+        <p>Npm packages: ${tech}</p>
+        </div>
       </div>
       <div class="card-action">
         <a href="${githubRepo}">Code</a>
