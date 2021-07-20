@@ -5,7 +5,7 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/18-Workout-Tracker",
     deployLink: "https://workout-tracker-2542.herokuapp.com/",
     imageName: "18-Snapshot-homepage-workout-tracker.png",
-    desc: "Workout Tracker is a full stack web app to view, create and track daily workouts. Used starting code.",
+    desc: "Workout Tracker is a full stack web app to view, create and track daily workouts. Used starter code.",
     tech: "Node, Express, Mongoose and JavaScript for the backend. HTML, CSS and Javascript for the frontend.",
   },
   {
@@ -99,7 +99,7 @@ var projObj = [
     gitHubRepo:  "https://github.com/minprocess/05-Calendar",
     deployLink: "https://minprocess.github.io/05-Calendar",
     imageName:  "05-Calendar.png",
-    desc: "Simple daily planner. 'Events' entered by the user are kept in local storage until the next day. Used starting code.",
+    desc: "Simple daily planner. 'Events' entered by the user are kept in local storage until the next day. Used starter code.",
     tech: "HTML, CSS, JavaScript, jQuery, Moment.js",
   },
   {
@@ -115,7 +115,7 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/03-SecPassGen",
     deployLink: "https://minprocess.github.io/03-SecPassGen",
     imageName: "03-SecPassGen.png",
-    desc: "Generate a password containing random characters. Password can be customized. Used starting code",
+    desc: "Generate a password containing random characters. Password can be customized. Used starter code",
     tech: "HTML, CSS, JavaScript"
   },
   {
@@ -123,7 +123,7 @@ var projObj = [
     gitHubRepo: "https://github.com/minprocess/01-Horiseon-Refactor",
     deployLink: "https://minprocess.github.io/01-Horiseon-Refactor",
     imageName: "01-Horiseon-Refactor.png",
-    desc: "Refactor a website for social media and SEO company. Used starting code.",
+    desc: "Refactor a website for social media and SEO company. Used starter code.",
     tech: "HTML, CSS"
   }
 ]
@@ -135,11 +135,31 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var projList = document.querySelector("#proj-list");  // ul
     var html = ``;
-    for (var i=0; i<projObj.length; i++) {
-        html += cardHtml(i)
+    const numRows = projObj.length/3;
+    const remain = projObj.length%3;
+    console.log("projObj.length", projObj.length);
+    console.log("numRows", numRows)
+    let k = 0;
+    for (var i=0; i<numRows; i++) {
+      html += `<div class="row">`;
+      for (var j=0; j<3; j++) {
+        html += cardHtml(k)
+        k++;
+      }
+      html += `</div>`;
+    }
+    if (remain > 0) {
+      for (var i=0; i<numRows; i++) {
+        html += `<div class="row">`;
+        for (var j=0; j<remain; j++) {
+          html += cardHtml(k);
+          k++;
+        }
+        html += `</div>`;
+      }
+  
     }
     //html += `</div>`
-    console.log(html);
     projList.innerHTML = html;
   });
 
@@ -192,7 +212,7 @@ cardHtml = function (i) {
         <div class="card-image">
           <img src="./assets/images/${imgName}">
         </div>
-        <div class="card-content" style="min-height: 250px">
+        <div class="card-content" style="min-height: 255px">
           <span class="card-title">${title}</span>
           <p>${desc}</p>
           <p><i>Technologies</i>: ${tech}</p>
